@@ -1,0 +1,13 @@
+<h4>Question #{{id}}</h4>
+<div class="error-container"></div>
+<div class="form-group">
+  <p class="control-label">{{question}}</p>
+  <form role="form">
+    <ol>
+    {{#each answers}}
+      <li><input id="answer-{{@index}}" type="checkbox" name="question" value="{{@index}}"><label class="control-label" for="answer-{{@index}}">{{this}}</label></li>
+    {{/each}}
+    </ol>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

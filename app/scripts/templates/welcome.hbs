@@ -1,0 +1,6 @@
+<h4>Welcome aboard!</h4>
+{{#unless name}}
+  {{> welcome-new}}
+{{else}}
+  {{> welcome-again this}}
+{{/unless}}
